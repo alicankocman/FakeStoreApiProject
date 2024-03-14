@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Posts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <h1 class="FILTRATION">FILTRATION</h1>
+    <h1 class="my_products">MY PRODUCTS</h1>
+    <ul class="demo-dropdown">
+        <li><a href="#">ARRANGEMENT</a>
+            <ul>
+                <li><a href="#" id="cheap-to-expensive">FROM CHEAP TO EXPENSIVE</a></li>
+                <li><a href="#" id="expensive-to-cheap">FROM EXPENSIVE TO CHEAP</a></li>             
+                <li><a href="#" id="most-rated-ones">MOST RATED ONES</a></li>
+                <li><a href="#" id="least-rated-ones">THOSE WHO GET THE LEAST RATE</a></li>           
+            </ul>
+        </li>
+    </ul>
+    <div class="display">
+        <div class="filtreleme-container">
+            <input type="text" placeholder="price-range" class="price-range">
+            <input type="text" placeholder="rate-range" class="rate">
+            <input type="button" value="FILTRATION" onclick="filterItems()" class="list" >
+        </div>
+        <div class="post-container">
+            <!-- Bu div içine JavaScript tarafından doldurulacak post-item'lar eklenecek -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
