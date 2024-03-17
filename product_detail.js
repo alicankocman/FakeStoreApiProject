@@ -19,7 +19,7 @@ fetch(`https://fakestoreapi.com/products/${productId}`)
         // Ürün bilgileri
         const productName = document.createElement('h2');
         productName.textContent = data.title;
-
+        
         const productDescription = document.createElement('p');
         productDescription.textContent = data.description;
 

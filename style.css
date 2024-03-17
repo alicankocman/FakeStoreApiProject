@@ -14,9 +14,8 @@ body {
 .filtreleme-container {
     width: calc(22% - 60px);
     background-color: #f4f4f4;
-    padding: 10px;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom:  20px;
     height: 400px;
     border: 5px solid;
     border-color: white;
@@ -60,8 +59,10 @@ body {
     text-align: center;
 }
 
-.price-range,
-.rate{
+.price-min-range,
+.price-max-range,
+.rate-min-range,
+.rate-max-range{
     font-size: 20px;
     margin: 40px auto;
     text-align: center;
@@ -180,13 +181,14 @@ body {
 }
 
 .product-image {
-    max-width: 40%;
+    max-width: 30%;
     margin-right: 20px;
+    height: 500px;
 }
 
 .product-image img {
 width: 400px;
-height: auto;
+height: 450px;
 position: relative;
 top: 100px;
 left: 10px;
@@ -209,3 +211,28 @@ left: 920px;
 position: relative;
     text-align: center;
 }
+.kategori{
+    width: calc(22% - 60px); 
+    height: 400px;
+    background-color: aqua;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between; /* İçerikleri yatayda sağa ve sola yay */
+}
+
+.kategori {
+    width: calc(21.4% - 60px); 
+    height: 200px;
+    background-color: rgb(240, 242, 245);
+    position: absolute; /* Sabit bir konumda tut */
+    top: 500px; /* Alt kenardan 20 piksel yukarı taşı */
+    left: 0; /* Sağ kenara yerleştir */
+    border: 5px solid;
+    border-color:white;
+}
+.kategori-title{
+    text-align: center;
+}
+

@@ -24,13 +24,26 @@
     </ul>
     <div class="display">
         <div class="filtreleme-container">
-            <input type="text" placeholder="price-range" class="price-range">
-            <input type="text" placeholder="rate-range" class="rate">
+            <input type="text" placeholder="price-min-range" class="price-min-range">
+            <input type="text" placeholder="price-max-range" class="price-max-range">
+            <input type="text" placeholder="rate-min-range" class="rate-min-range">
+            <input type="text" placeholder="rate-max-range" class="rate-max-range">
             <input type="button" value="FILTRATION" onclick="filterItems()" class="list" >
         </div>
         <div class="post-container">
-            <!-- Bu div içine JavaScript tarafından doldurulacak post-item'lar eklenecek -->
+            
         </div>
+    </div>
+    <div class="kategori">
+        <h1 class="kategori-title">CATEGORY</h1>
+        <input type="radio" id="mens-clothing" name="product_kategori" value="men's clothing" onclick="filterByCategory(this)">
+        <label for="men's clothing">Men's Clothing</label><br>
+        <input type="radio" id="jewelery" name="product_kategori" value="jewelery" onclick="filterByCategory(this)">
+        <label for="jewelery">Jewelery</label><br>
+        <input type="radio" id="electronics" name="product_kategori" value="electronics" onclick="filterByCategory(this)">
+        <label for="electronics">Electronics</label><br>
+        <input type="radio" id="womens-clothing" name="product_kategori" value="women's clothing" onclick="filterByCategory(this)">
+        <label for="women's clothing">Women's Clothing</label>
     </div>
     <script src="app.js"></script>
 </body>
